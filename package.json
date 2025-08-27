@@ -1,0 +1,25 @@
+{
+  "name": "cv-devops-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosaeszter/cv-devops-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kosaeszter/cv-devops-project/issues"
+  },
+  "homepage": "https://github.com/kosaeszter/cv-devops-project#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
