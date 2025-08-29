@@ -2,7 +2,6 @@
 resource "aws_db_instance" "postgres" {
   identifier             = "kosaeszter-devops-db"
   engine                 = "postgres"
-  engine_version         = "15.3"
   instance_class         = var.db_instance_class
   allocated_storage      = 20
   storage_type           = "gp2"

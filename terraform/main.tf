@@ -11,3 +11,11 @@ module "rds" {
   db_username        = "postgres"
   db_password        = var.db_password
 }
+
+module "ecr" {
+  source          = "./modules/ecr"
+  repository_name = "kosaeszter-cvproject-devops-app"
+  tags            = {
+    Name = "kosaeszter-ecr-repo"
+  }
+}
