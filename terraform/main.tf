@@ -19,3 +19,13 @@ module "ecr" {
     Name = "kosaeszter-ecr-repo"
   }
 }
+
+module "eks"{
+  source = "./modules/eks"
+    vpc_id             = module.vpc.vpc_id
+    private_subnet_ids = [module.vpc.private_subnet_id_a, module.vpc.private_subnet_id_b]
+  tags = {
+    Name = "kosaeszter-eks-cluster"
+  }
+
+}
