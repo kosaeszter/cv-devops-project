@@ -4,7 +4,7 @@ resource "aws_eks_cluster" "cluster" {
   role_arn = aws_iam_role.cluster.arn
   vpc_config {
     subnet_ids = var.private_subnet_ids
-    vpc_id     = var.vpc_id
+    #vpc_id     = var.vpc_id
   }
   tags = var.tags
 }
