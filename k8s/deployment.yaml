@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: express-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: express-app
+  template:
+    metadata:
+      labels:
+        app: express-app
+    spec:
+      containers:
+      - name: express-app
+        image: 536284936715.dkr.ecr.us-east-1.amazonaws.com/kosaeszter-cvproject-devops-app:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "0.1"
+          limits:
+            memory: "256Mi"
+            cpu: "0.2"
