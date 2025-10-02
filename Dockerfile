@@ -6,6 +6,7 @@ COPY . .
 RUN npm prune --production 
 
 FROM node:18-slim
+RUN apt-get update && apt-get install -y postgresql-client
 WORKDIR /src/app
 COPY --from=builder /src/app/node_modules ./node_modules
 COPY --from=builder /src/app/main.js .

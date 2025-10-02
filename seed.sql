@@ -18,5 +18,5 @@ CREATE TABLE contact (
 );
 
 INSERT INTO profile (name) VALUES ('Kosa Eszter');
-INSERT INTO experience (title, company, start_date, end_date) VALUES ('DevOps Engineer', 'abc', '2024-01-01', '2025-10-01');
-INSERT INTO contact (email, phone) VALUES ('kosa@example.com', '+1234567890');
+INSERT INTO experience (title, company, start_date, end_date) VALUES ('DevOps Engineer', 'Example Company', '2024-01-01', '2025-10-01');
+INSERT INTO contact (email, phone) VALUES ('abc@example.com', '+1234567890');
